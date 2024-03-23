@@ -1,8 +1,7 @@
 import React from "react";
-import ContainerProps from "./type";
 import { useSortable } from "@dnd-kit/sortable";
-import clsx from "clsx";
 import { ScrollArea } from "@mantine/core";
+import { ContainerProps } from "@/interface/interface";
 
 const Container = ({ description, children, title, id }: ContainerProps) => {
   const { setNodeRef, isDragging } = useSortable({
@@ -14,10 +13,7 @@ const Container = ({ description, children, title, id }: ContainerProps) => {
   return (
     <div
       ref={setNodeRef}
-      className={clsx(
-        "w-full h-[25rem] p-4 bg-gray-50 rounded-xl flex flex-col gap-y-4",
-        isDragging && "opacity-50",
-      )}
+      className="w-full h-[25rem] p-4 bg-gray-50 rounded-xl flex flex-col gap-y-4"
     >
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-y-1">

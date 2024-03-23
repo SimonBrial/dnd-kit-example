@@ -24,7 +24,7 @@ import {
 // Components
 import { DNDType } from "@/interface/interface";
 import { dataFake } from "@/data/dataItems";
-import Container from "./container/Container";
+import Container from "./Container";
 import Items from "./Items";
 
 

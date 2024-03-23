@@ -4,6 +4,7 @@ interface ContainerProps {
   id: UniqueIdentifier;
   children: React.ReactNode;
   title?: string;
+  description?: string;
 }
 
 interface ItemsType {
